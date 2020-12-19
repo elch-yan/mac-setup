@@ -17,9 +17,9 @@ brew install git
 
 3. Configure git
 
-Create `~/.gitconfig` file with `git-configs/global` contents
+   Create `~/.gitconfig` file with `git-configs/global` contents
 
-Create `~/Documents/personal/.gitconfig` file with `git-configs/personal` contents
+   Create `~/Documents/personal/.gitconfig` file with `git-configs/personal` contents
 
 4. Clone repository
 

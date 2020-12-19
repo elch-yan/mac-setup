@@ -30,6 +30,8 @@ colorscheme forest-night
 
 let g:airline_theme = 'badwolf'
 
+highlight Comment cterm=NONE ctermfg=DarkCyan ctermbg=NONE
+
 " air-line
 let g:airline_powerline_fonts = 1
 

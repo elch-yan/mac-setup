@@ -1,0 +1,8 @@
+[user]
+        name = elchyan
+        email = aram.elchyan@picsart.com
+[credential]
+        username = elchyan-picsart
+        helper = osxkeychain
+[includeIf "gitdir:~/Documents/personal/**"]
+        path = ~/Documents/personal/.gitconfig

@@ -1,0 +1,21 @@
+# Java
+export JAVA_HOME=/Library/Java/Home
+
+# NVM - NodeJS and NPM
+export NVM_DIR="$HOME/.nvm"
+NVM_HOMEBREW="/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_HOMEBREW" ] && \. "$NVM_HOMEBREW"
+
+[ -x "$(command -v npm)" ] && export NODE_PATH=$NODE_PATH:`npm root -g`
+
+# Pygmentize
+alias pcat='pygmentize -f terminal256 -O style=monokai -g'
+
+# Production 'super user' 'pa-api'
+alias kprod='kubectl --kubeconfig ~/.kube/config-super-prod -n pa-api'
+
+# To avoid being asked for passphrase
+ssh-add -K ~/.ssh/id_rsa
+
+# Clear screen
+clear && printf '\033[2J'

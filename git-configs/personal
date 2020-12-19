@@ -1,0 +1,6 @@
+[user]
+        name = elchyan
+        email = elch.yan@yahoo.com
+[credential]
+        username = elch-yan
+        helper = osxkeychain

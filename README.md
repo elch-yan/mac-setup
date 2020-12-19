@@ -40,5 +40,5 @@ chmod +x start.sh
 5. Run start.sh
 
 ```sh
-./start.shell
+./start.sh
 ```

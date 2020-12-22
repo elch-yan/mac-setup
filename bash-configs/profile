@@ -4,7 +4,10 @@ export JAVA_HOME=/Library/Java/Home
 # NVM - NodeJS and NPM
 export NVM_DIR="$HOME/.nvm"
 NVM_HOMEBREW="/usr/local/opt/nvm/nvm.sh"
-[ -s "$NVM_HOMEBREW" ] && \. "$NVM_HOMEBREW"
+[ -s "$NVM_HOMEBREW" ] && \. "$NVM_HOMEBREW" # This loads nvm
+
+NVM_COMPLETEION="/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+[ -s "$NVM_COMPLETEION" ] && \. "$NVM_COMPLETEION"  # This loads nvm bash_completion
 
 [ -x "$(command -v npm)" ] && export NODE_PATH=$NODE_PATH:`npm root -g`
 
@@ -15,7 +18,7 @@ alias pcat='pygmentize -f terminal256 -O style=monokai -g'
 alias kprod='kubectl --kubeconfig ~/.kube/config-super-prod -n pa-api'
 
 # To avoid being asked for passphrase
-ssh-add -K ~/.ssh/id_rsa
+# ssh-add -K ~/.ssh/id_rsa
 
 # Clear screen
 clear && printf '\033[2J'

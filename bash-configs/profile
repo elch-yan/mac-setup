@@ -21,4 +21,4 @@ alias kprod='kubectl --kubeconfig ~/.kube/config-super-prod -n pa-api'
 # ssh-add -K ~/.ssh/id_rsa
 
 # Clear screen
-clear && printf '\033[2J'
+clear && printf '\e[3J'

@@ -28,31 +28,13 @@ cp ./bash-configs/profile ~/.profile
 cp ./bash-configs/zshrc ~/.zshrc
 
 # Install nerd-fonts
-cask "font-hack-nerd-font" do\
-  version "2.1.0"\
-  sha256 "70852e59fcffbe31d401f615625bcb9ebb6af72732c2f1fe9b9d5370c2565514"\
-\
-  url "https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/Hack.zip"\
-  appcast "https://github.com/ryanoasis/nerd-fonts/releases.atom"\
-  name "Hack Nerd Font (Hack)"\
-  homepage "https://github.com/ryanoasis/nerd-fonts"\
-\
-  font "Hack Bold Nerd Font Complete Mono.ttf"\
-  font "Hack Bold Nerd Font Complete.ttf"\
-  font "Hack Bold Italic Nerd Font Complete Mono.ttf"\
-  font "Hack Bold Italic Nerd Font Complete.ttf"\
-  font "Hack Regular Nerd Font Complete.ttf"\
-  font "Hack Regular Nerd Font Complete Mono.ttf"\
-  font "Hack Italic Nerd Font Complete Mono.ttf"\
-  font "Hack Italic Nerd Font Complete.ttf"\
-end
-: 1603201810:0;brew tap homebrew/cask-fonts\
+brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 
 # Setup zsh plugins
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git\
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions

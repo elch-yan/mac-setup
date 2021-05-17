@@ -26,7 +26,8 @@ call plug#end()
 " for delete key to work
 set backspace=indent,eol,start
 
-colorscheme forest-night
+" forest-night
+colorscheme everforest
 
 let g:airline_theme = 'badwolf'
 

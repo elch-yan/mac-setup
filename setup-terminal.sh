@@ -10,6 +10,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # Setup vim (Should vim into ~/.vimrc and run :PlugInstall)
 cp ./bash-configs/vimrc ~/.vimrc
 
+# Install gitk
+brew install git-gui
+
 # Install pcat
 sudo pip3 install pygments
 
@@ -29,7 +32,7 @@ cp ./bash-configs/zshrc ~/.zshrc
 
 # Install nerd-fonts
 brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+brew install --cask font-hack-nerd-font
 
 # Setup zsh plugins
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions

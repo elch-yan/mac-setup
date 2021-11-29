@@ -16,6 +16,7 @@ programs=(
     "protonvpn"
     "qbittorrent"
     "vlc"
+    "spotify"
 )
 
 for program in "${programs[@]}"

@@ -2,7 +2,9 @@
         name = elchyan
         email = aram.elchyan@picsart.com
 [credential]
-        username = elchyan-picsart
+        username = aram.elchyan
         helper = osxkeychain
 [includeIf "gitdir:~/Documents/personal/**"]
         path = ~/Documents/personal/.gitconfig
+[includeIf "gitdir:~/Documents/work/hub/**"]
+        path = ~/Documents/work/hub/.gitconfig

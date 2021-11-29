@@ -1,5 +1,5 @@
 # Java
-export JAVA_HOME=/Library/Java/Home
+export JAVA_HOME=/usr/local/Cellar/openjdk/17.0.1
 
 # NVM - NodeJS and NPM
 export NVM_DIR="$HOME/.nvm"
@@ -15,7 +15,13 @@ NVM_COMPLETEION="/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 alias pcat='pygmentize -f terminal256 -O style=monokai -g'
 
 # Production 'super user' 'pa-api'
-alias kprod='kubectl --kubeconfig ~/.kube/config-super-prod -n pa-api'
+alias kprod='kubectl --kubeconfig ~/.kube/config-prod -n pa-api'
+
+# Stage 'super user'
+alias kstage='kubectl --kubeconfig ~/.kube/config-stage-dev -n api-stage'
+
+# Dev 'super user'
+alias kdev='kubectl --kubeconfig ~/.kube/config-stage-dev -n api-dev'
 
 # To avoid being asked for passphrase
 # ssh-add -K ~/.ssh/id_rsa

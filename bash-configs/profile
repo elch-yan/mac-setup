@@ -3,7 +3,7 @@ export JAVA_HOME=/usr/local/Cellar/openjdk/17.0.1
 
 # NVM - NodeJS and NPM
 export NVM_DIR="$HOME/.nvm"
-NVM_HOMEBREW="/usr/local/opt/nvm/nvm.sh"
+NVM_HOMEBREW="$(brew --prefix)/opt/nvm/nvm.sh"
 [ -s "$NVM_HOMEBREW" ] && \. "$NVM_HOMEBREW" # This loads nvm
 
 NVM_COMPLETEION="/usr/local/opt/nvm/etc/bash_completion.d/nvm"

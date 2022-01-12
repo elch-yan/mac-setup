@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install rosetta for non Apple silicon built programs
+softwareupdate --install-rosetta
+
 # Install node version manager
 brew install nvm
 

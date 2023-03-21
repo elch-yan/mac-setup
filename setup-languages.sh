@@ -17,12 +17,7 @@ brew install openjdk
 brew install kotlin
 
 # Install python
-brew install python3
-brew install python
-brew unlink python && brew link --overwrite python # make sure python links to python2
-
-pip2 install --upgrade pip setuptools # upgrade to latest pip2
-pip3 install --upgrade pip setuptools
+brew install pyenv
 
 # Install maven
 brew install maven

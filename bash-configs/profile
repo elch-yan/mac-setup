@@ -1,6 +1,6 @@
 # Java
-export JAVA_HOME=/usr/local/Cellar/openjdk/17.0.1
-
+export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.5/libexec/openjdk.jdk/Contents/Home
+i
 # NVM - NodeJS and NPM
 export NVM_DIR="$HOME/.nvm"
 NVM_HOMEBREW="$(brew --prefix)/opt/nvm/nvm.sh"
@@ -26,5 +26,13 @@ alias kdev='kubectl --kubeconfig ~/.kube/config-stage-dev -n api-dev'
 # To avoid being asked for passphrase
 # ssh-add -K ~/.ssh/id_rsa
 
+# German keyboard tilde fix
+# hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000035,"HIDKeyboardModifierMappingDst":0x700000064},{"HIDKeyboardModifierMappingSrc":0x700000064,"HIDKeyboardModifierMappingDst":0x700000035}]}'
+
+# export PATH="/opt/homebrew/opt/python@3.9/libexec/bin:$PATH"
+eval "$(pyenv init --path)"
+
+
 # Clear screen
 clear && printf '\e[3J'
+
